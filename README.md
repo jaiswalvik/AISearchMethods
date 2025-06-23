@@ -1,23 +1,35 @@
-Given a set of N cities and distance between every pair of
-cities, find the shortest possible route that starts from a
-city and visits every city exactly once and returns to the
-starting city.
-Write a program to find the shortest tour of N cities.
-Note: take this opportunity to test your optimization skills,
-try new algorithms, try new heuristic functions, improve
-existing algorithms, etc., etc., etc.
-Input Specification
-Your program must read from the standard input:
-First line: either EUCLIDEAN or NON-EUCLIDEAN.
-Second line: an integer N, number of cities.
-Next N lines: each line contains 2D coordinates.
-Next N lines: each line contains N distance values,
-i.e., distance to kth city from each city.
-The coordinates and distances are space separated list of
-floating-point numbers.
-Use the coordinates for display.
-Use the distance matrix for computing tour cost.
-For example, a Euclidean TSP for N=5:
+# 🧭 Traveling Salesman Problem (TSP) Solver
+
+This project implements a solver for the **Traveling Salesman Problem (TSP)** — a classic combinatorial optimization problem. The goal is to find the **shortest possible route** that visits each city **exactly once** and returns to the starting city.
+
+---
+
+## 📋 Problem Description
+
+Given:
+- A list of `N` cities
+- 2D coordinates of each city
+- A full distance matrix between all pairs of cities
+
+Your task is to compute the shortest tour that:
+- Starts at any city
+- Visits each city exactly once
+- Returns to the starting point
+
+---
+
+## 📥 Input Format
+
+Your program must read from **standard input** with the following structure:
+
+First line: EUCLIDEAN or NON-EUCLIDEAN
+Second line: Integer N (number of cities)
+Next N lines: 2D coordinates (used only for display)
+Next N lines: N space-separated floats — distance matrix
+
+
+### 🔹 Example Input
+
 EUCLIDEAN
 5
 10.391379 8.405525
@@ -31,17 +43,19 @@ EUCLIDEAN
 3.187861 5.736168 7.822640 0.0 2.419287
 4.302992 4.420019 10.096052 2.419287 0.0
 
-Output Specification
 
-Your program must write the current best tour (in path rep-
-resentation) to standard output, one tour per line.
+---
 
-output line: PATH REPRESENTATION OF TOUR
+## 📤 Output Format
 
-The city indices in path-representation are zero based in-
-dices, it goes from 0 to N-1.
+The output is written to **standard output** as:
 
-For example, for N=5, three tours are presented here:
+- A single line per tour (in path representation)
+- City indices are **zero-based** (`0` to `N-1`)
+- Each line is a valid complete tour
+
+### 🔹 Example Output
+
 1 2 4 0 3
 0 1 3 4 2
 4 3 2 0 1
