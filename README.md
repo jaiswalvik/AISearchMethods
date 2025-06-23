@@ -29,7 +29,6 @@ Next N lines: N space-separated floats — distance matrix
 
 
 ### 🔹 Example Input
-
 EUCLIDEAN
 5
 10.391379 8.405525
@@ -42,7 +41,6 @@ EUCLIDEAN
 9.110738 13.285327 0.0 7.822640 10.096052
 3.187861 5.736168 7.822640 0.0 2.419287
 4.302992 4.420019 10.096052 2.419287 0.0
-
 
 ---
 
