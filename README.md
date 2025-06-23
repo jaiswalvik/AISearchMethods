@@ -12,10 +12,7 @@ First line: either EUCLIDEAN or NON-EUCLIDEAN.
 Second line: an integer N, number of cities.
 Next N lines: each line contains 2D coordinates.
 Next N lines: each line contains N distance values,
-
-i.e., distance to k
-
-th city from each city.
+i.e., distance to kth city from each city.
 The coordinates and distances are space separated list of
 floating-point numbers.
 Use the coordinates for display.
