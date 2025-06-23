@@ -1,4 +1,3 @@
-"# AISearchMethods" 
 Given a set of N cities and distance between every pair of
 cities, find the shortest possible route that starts from a
 city and visits every city exactly once and returns to the
